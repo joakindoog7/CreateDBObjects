@@ -1,0 +1,613 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1112/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">886bc05b-d9ef-4a09-aebd-b55b4f2ec747</identifier>
+  </ID>
+  <name>ADDRESSES</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">9001f41f-36d4-4047-b0d8-cdd30ff6f85e</identifier>
+      </ID>
+      <name>ADDRESS_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">84b10dba-5dd7-4ded-8e3a-d3b7739d387c</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>ADDRESS_ID</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ADDRESSES</name>
+                  <identifier class="java.math.BigDecimal">20271</identifier>
+                  <schemaName>DBDEMO</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>ADDRESS_ID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ADDRESSES</name>
+              <identifier class="java.math.BigDecimal">20271</identifier>
+              <schemaName>DBDEMO</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">b95cc957-b247-4b85-8fcd-4134a937efd5</identifier>
+      </ID>
+      <name>ADDRESS_LINE1</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">e173759b-4f5a-4648-9bef-0867fb1ba7b7</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">40</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>ADDRESS_LINE1</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ADDRESSES</name>
+                  <identifier class="java.math.BigDecimal">20271</identifier>
+                  <schemaName>DBDEMO</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>ADDRESS_LINE1</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ADDRESSES</name>
+              <identifier class="java.math.BigDecimal">20271</identifier>
+              <schemaName>DBDEMO</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">09d86c09-dd6f-446e-996e-a89caf795d60</identifier>
+      </ID>
+      <name>ADDRESS_LINE2</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">b6703b29-feee-416a-afb9-ebd897433127</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">240</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>ADDRESS_LINE2</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ADDRESSES</name>
+                  <identifier class="java.math.BigDecimal">20271</identifier>
+                  <schemaName>DBDEMO</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>ADDRESS_LINE2</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ADDRESSES</name>
+              <identifier class="java.math.BigDecimal">20271</identifier>
+              <schemaName>DBDEMO</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">52ab26b7-5c88-490b-8484-5da7a09be687</identifier>
+      </ID>
+      <name>PERSON_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">b848b8e5-556b-4196-9074-ccc01e2ff699</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">15</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>PERSON_ID</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ADDRESSES</name>
+                  <identifier class="java.math.BigDecimal">20271</identifier>
+                  <schemaName>DBDEMO</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>PERSON_ID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ADDRESSES</name>
+              <identifier class="java.math.BigDecimal">20271</identifier>
+              <schemaName>DBDEMO</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">6041386b-993a-4c59-a70e-edbad55b8fae</identifier>
+      </ID>
+      <name>TOWN</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">ac9d90c3-bac5-4fdc-800b-4f081e3757c1</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">25</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>TOWN</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ADDRESSES</name>
+                  <identifier class="java.math.BigDecimal">20271</identifier>
+                  <schemaName>DBDEMO</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>TOWN</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ADDRESSES</name>
+              <identifier class="java.math.BigDecimal">20271</identifier>
+              <schemaName>DBDEMO</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">0318503d-73d5-4c09-9d4f-700798d0fe16</identifier>
+      </ID>
+      <name>ADDRESSES_PERSONS_FK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>PERSON_ID</name>
+          <identifier class="java.lang.String">52ab26b7-5c88-490b-8484-5da7a09be687</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>ADDRESSES</name>
+            <identifier class="java.lang.String">886bc05b-d9ef-4a09-aebd-b55b4f2ec747</identifier>
+            <schemaName>DBDEMO</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>DBDEMO</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>ADDRESSES_PERSONS_FK</name>
+            <childObjectNames>
+              <childObjectName>PERSON_ID</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ADDRESSES</name>
+              <identifier class="java.math.BigDecimal">20271</identifier>
+              <schemaName>DBDEMO</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>FKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>PERSONS_PK</name>
+        <identifier class="java.lang.String">58d2aeeb-13ba-481a-9fe2-e2680a24149d</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>PERSONS</name>
+          <identifier class="java.lang.String">ad1d1471-b3ac-4467-ad59-bfd9df77635b</identifier>
+          <schemaName>DBDEMO</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>DBDEMO</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">b864387f-eb8e-4631-a10f-ae117b292492</identifier>
+      </ID>
+      <name>ADDRESSES_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>ADDRESS_ID</name>
+          <identifier class="java.lang.String">9001f41f-36d4-4047-b0d8-cdd30ff6f85e</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>ADDRESSES</name>
+            <identifier class="java.lang.String">886bc05b-d9ef-4a09-aebd-b55b4f2ec747</identifier>
+            <schemaName>DBDEMO</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>DBDEMO</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.IdentifierBasedID">
+        <name>ADDRESSES_PK</name>
+        <identifier class="java.lang.String">8f51133e-002e-4dbd-94a4-ffb525f7b615</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>ADDRESSES</name>
+          <identifier class="java.lang.String">886bc05b-d9ef-4a09-aebd-b55b4f2ec747</identifier>
+          <schemaName>DBDEMO</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>DBDEMO</schemaName>
+        <type>INDEX</type>
+      </indexID>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>ADDRESSES_PK</name>
+            <childObjectNames>
+              <childObjectName>ADDRESS_ID</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ADDRESSES</name>
+              <identifier class="java.math.BigDecimal">20271</identifier>
+              <schemaName>DBDEMO</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>PKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+    </constraint>
+  </constraints>
+  <indexes>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">8f51133e-002e-4dbd-94a4-ffb525f7b615</identifier>
+      </ID>
+      <name>ADDRESSES_PK</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">0e644c36-70f7-4847-babc-dabe5e1f94b8</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">e93c55c4-9ad7-4e73-9bca-1360a83f1045</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>ADDRESS_ID</name>
+              <identifier class="java.lang.String">9001f41f-36d4-4047-b0d8-cdd30ff6f85e</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>ADDRESSES</name>
+                <identifier class="java.lang.String">886bc05b-d9ef-4a09-aebd-b55b4f2ec747</identifier>
+                <schemaName>DBDEMO</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <schemaName>DBDEMO</schemaName>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <properties>
+              <entry>
+                <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+                <value class="oracle.javatools.db.ReferenceID">
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <parent class="oracle.javatools.db.ReferenceID">
+                      <name>ADDRESSES_PK</name>
+                      <identifier class="java.math.BigDecimal">20272</identifier>
+                      <parent class="oracle.javatools.db.ReferenceID">
+                        <name>ADDRESSES</name>
+                        <identifier class="java.math.BigDecimal">20271</identifier>
+                        <schemaName>DBDEMO</schemaName>
+                        <type>TABLE</type>
+                      </parent>
+                      <schemaName>DBDEMO</schemaName>
+                      <type>INDEX</type>
+                    </parent>
+                    <type>IndexObject</type>
+                  </parent>
+                  <type>SQLFragment</type>
+                </value>
+              </entry>
+            </properties>
+            <qualified>true</qualified>
+          </expression>
+          <order>ASC</order>
+          <properties>
+            <entry>
+              <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+              <value class="oracle.javatools.db.ReferenceID">
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>ADDRESSES_PK</name>
+                  <identifier class="java.math.BigDecimal">20272</identifier>
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>ADDRESSES</name>
+                    <identifier class="java.math.BigDecimal">20271</identifier>
+                    <schemaName>DBDEMO</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>DBDEMO</schemaName>
+                  <type>INDEX</type>
+                </parent>
+                <type>IndexObject</type>
+              </value>
+            </entry>
+          </properties>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>ADDRESSES_PK</name>
+            <identifier class="java.math.BigDecimal">20272</identifier>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>ADDRESSES</name>
+              <identifier class="java.math.BigDecimal">20271</identifier>
+              <schemaName>DBDEMO</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>DBDEMO</schemaName>
+            <type>INDEX</type>
+          </value>
+        </entry>
+        <entry>
+          <key>OracleStorageProperties</key>
+          <value class="oracle.javatools.db.ora.OracleStorageProperties">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">4b9b9294-bb8f-4eee-b6b9-e7b885316001</identifier>
+            </ID>
+            <bufferMode>DEFAULT</bufferMode>
+            <freelistGroups>1</freelistGroups>
+            <freelists>1</freelists>
+            <initialExtent>65536</initialExtent>
+            <initrans>2</initrans>
+            <logging>true</logging>
+            <maxExtent>2147483645</maxExtent>
+            <minExtent>1</minExtent>
+            <nextExtent>1048576</nextExtent>
+            <percentFree>10</percentFree>
+            <properties>
+              <entry>
+                <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+                <value class="oracle.javatools.db.ReferenceID">
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>ADDRESSES_PK</name>
+                    <identifier class="java.math.BigDecimal">20272</identifier>
+                    <parent class="oracle.javatools.db.ReferenceID">
+                      <name>ADDRESSES</name>
+                      <identifier class="java.math.BigDecimal">20271</identifier>
+                      <schemaName>DBDEMO</schemaName>
+                      <type>TABLE</type>
+                    </parent>
+                    <schemaName>DBDEMO</schemaName>
+                    <type>INDEX</type>
+                  </parent>
+                  <type>OracleStorageProperties</type>
+                </value>
+              </entry>
+            </properties>
+            <tablespaceID class="oracle.javatools.db.ReferenceID">
+              <name>SYSTEM</name>
+              <type>TABLESPACE</type>
+            </tablespaceID>
+          </value>
+        </entry>
+      </properties>
+      <schema>
+        <name>DBDEMO</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </indexe>
+  </indexes>
+  <properties>
+    <entry>
+      <key>OfflineDBConstants.IMPORT_SOURCE_CONNECTION</key>
+      <value class="java.lang.String">DBDEMOConn</value>
+    </entry>
+    <entry>
+      <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+      <value class="oracle.javatools.db.ReferenceID">
+        <name>ADDRESSES</name>
+        <identifier class="java.math.BigDecimal">20271</identifier>
+        <schemaName>DBDEMO</schemaName>
+        <type>TABLE</type>
+      </value>
+    </entry>
+    <entry>
+      <key>OracleStorageProperties</key>
+      <value class="oracle.javatools.db.ora.OracleStorageProperties">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">568c0d90-3251-44e7-84a2-288ccd1dcf7d</identifier>
+        </ID>
+        <bufferMode>DEFAULT</bufferMode>
+        <freelistGroups>1</freelistGroups>
+        <freelists>1</freelists>
+        <initialExtent>65536</initialExtent>
+        <initrans>1</initrans>
+        <logging>true</logging>
+        <maxExtent>2147483645</maxExtent>
+        <minExtent>1</minExtent>
+        <nextExtent>1048576</nextExtent>
+        <percentFree>10</percentFree>
+        <percentUsed>40</percentUsed>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>ADDRESSES</name>
+                <identifier class="java.math.BigDecimal">20271</identifier>
+                <schemaName>DBDEMO</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <type>OracleStorageProperties</type>
+            </value>
+          </entry>
+        </properties>
+        <tablespaceID class="oracle.javatools.db.ReferenceID">
+          <name>SYSTEM</name>
+          <type>TABLESPACE</type>
+        </tablespaceID>
+      </value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>DBDEMO</name>
+  </schema>
+</table>

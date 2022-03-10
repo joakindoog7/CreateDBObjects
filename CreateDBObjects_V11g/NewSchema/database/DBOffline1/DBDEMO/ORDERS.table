@@ -1,0 +1,246 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1112/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">4afaad8f-b201-48ef-b9b0-7fa32c7e1a8a</identifier>
+  </ID>
+  <name>ORDERS</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">5d216cfa-f314-4892-957f-d8867cb6018f</identifier>
+      </ID>
+      <name>ORDER_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">c32e4815-30e4-420a-ac9a-8ca43e9796ad</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">fb628b18-7dae-4430-a0a0-c6bf7482335e</identifier>
+      </ID>
+      <name>ORDER_DATE </name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">06417a53-dd18-4278-a391-6d7eba010f29</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>DATE</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">48516c69-bbdf-4deb-8cbc-e28d864c5589</identifier>
+      </ID>
+      <name>ORDER_TOTAL</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">991ba1cb-d1be-481e-933a-21e87216f10f</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">754ef14d-8562-45aa-9a04-eac990d4a98e</identifier>
+      </ID>
+      <name>PERSON_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">9c9af8fe-57eb-4b87-a73a-3a7bdba34ed8</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">ed454d65-5854-4140-a552-333aa8fcf33e</identifier>
+      </ID>
+      <name>ORDERS_FK1</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>PERSON_ID</name>
+          <identifier class="java.lang.String">754ef14d-8562-45aa-9a04-eac990d4a98e</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>ORDERS</name>
+            <identifier class="java.lang.String">4afaad8f-b201-48ef-b9b0-7fa32c7e1a8a</identifier>
+            <schemaName>DBDEMO</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>DBDEMO</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>PERSONS_PK</name>
+        <identifier class="java.lang.String">59b31b2e-41d8-42c7-b9fb-7510d0133137</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>PERSONS</name>
+          <identifier class="java.lang.String">51060d54-1c86-46fd-aba4-9d866a3111fe</identifier>
+          <schemaName>DBDEMO</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>DBDEMO</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">039f7aa0-95b7-42f4-b986-78a72fe4f6e0</identifier>
+      </ID>
+      <name>ORDERS_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>ORDER_ID</name>
+          <identifier class="java.lang.String">5d216cfa-f314-4892-957f-d8867cb6018f</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>ORDERS</name>
+            <identifier class="java.lang.String">4afaad8f-b201-48ef-b9b0-7fa32c7e1a8a</identifier>
+            <schemaName>DBDEMO</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>DBDEMO</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.IdentifierBasedID">
+        <name>ORDERS_PK</name>
+        <identifier class="java.lang.String">caccb5ce-24d6-4e12-ab40-94c8f21e0e87</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>ORDERS</name>
+          <identifier class="java.lang.String">4afaad8f-b201-48ef-b9b0-7fa32c7e1a8a</identifier>
+          <schemaName>DBDEMO</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>DBDEMO</schemaName>
+        <type>INDEX</type>
+      </indexID>
+    </constraint>
+  </constraints>
+  <indexes>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">caccb5ce-24d6-4e12-ab40-94c8f21e0e87</identifier>
+      </ID>
+      <name>ORDERS_PK</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">9943ca44-a257-451f-b3be-2e1cb351eaca</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">c2f3c0c3-e165-42d6-9d3f-3ab48c32cf05</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>ORDER_ID</name>
+              <identifier class="java.lang.String">5d216cfa-f314-4892-957f-d8867cb6018f</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>ORDERS</name>
+                <identifier class="java.lang.String">4afaad8f-b201-48ef-b9b0-7fa32c7e1a8a</identifier>
+                <schemaName>DBDEMO</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <schemaName>DBDEMO</schemaName>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+          <order>ASC</order>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>DBDEMO</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </indexe>
+  </indexes>
+  <properties>
+    <entry>
+      <key>OracleTablePartitions</key>
+      <value class="oracle.javatools.db.ora.OracleTablePartitions">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">f6576959-d47e-4965-addd-ed15c008d359</identifier>
+        </ID>
+        <objectType>PARTITION</objectType>
+        <partitionColumns>
+          <partitionColumn class="oracle.javatools.db.IdentifierBasedID">
+            <name>ORDER_DATE </name>
+            <identifier class="java.lang.String">fb628b18-7dae-4430-a0a0-c6bf7482335e</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>ORDERS</name>
+              <identifier class="java.lang.String">4afaad8f-b201-48ef-b9b0-7fa32c7e1a8a</identifier>
+              <schemaName>DBDEMO</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>DBDEMO</schemaName>
+            <type>COLUMN</type>
+          </partitionColumn>
+        </partitionColumns>
+        <partitionType>RANGE</partitionType>
+        <partitions>
+          <partition>
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">de072ccd-8d27-4422-9a96-6ff24bb92601</identifier>
+            </ID>
+            <name>ORDERS_PRE_2007</name>
+            <compression>NOCOMPRESS</compression>
+            <objectType>PARTITION</objectType>
+            <partitionType>RANGE</partitionType>
+            <values>
+              <value class="java.lang.String">TO_DATE(&apos;01/01/2007&apos;, &apos;MM/DD/YYYY&apos;)</value>
+            </values>
+          </partition>
+          <partition>
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">fc0ee2b0-b007-4080-8877-5011b3c0f902</identifier>
+            </ID>
+            <name>ORDERS_2007</name>
+            <compression>NOCOMPRESS</compression>
+            <objectType>PARTITION</objectType>
+            <partitionType>RANGE</partitionType>
+            <values>
+              <value class="java.lang.String">TO_DATE(&apos;01/01/2008&apos;, &apos;MM/DD/YYYY&apos;)</value>
+            </values>
+          </partition>
+        </partitions>
+      </value>
+    </entry>
+    <entry>
+      <key>PARTITIONED TABLE</key>
+      <value class="java.lang.Boolean">true</value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>DBDEMO</name>
+  </schema>
+</table>

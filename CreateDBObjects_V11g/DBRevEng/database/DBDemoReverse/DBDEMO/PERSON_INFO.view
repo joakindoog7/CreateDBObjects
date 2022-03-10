@@ -1,0 +1,529 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<view xmlns="http://xmlns.oracle.com/jdeveloper/1112/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">ea07a144-174c-4c33-a15f-7ec94f774f94</identifier>
+  </ID>
+  <name>PERSON_INFO</name>
+  <SQLQuery class="oracle.javatools.db.ora.OracleSQLQuery">
+    <ID class="oracle.javatools.db.IdentifierBasedID">
+      <identifier class="java.lang.String">9988ef4f-ea90-4afc-94d8-fd20970dac42</identifier>
+    </ID>
+    <distinct>false</distinct>
+    <fromObjects>
+      <fromObject>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">29a5e967-83a4-4155-a6f1-8ef82b019971</identifier>
+        </ID>
+        <expression class="oracle.javatools.db.sql.JoinObject">
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">a50bd53f-b0e2-4d05-87de-d1c886b84556</identifier>
+          </ID>
+          <condition class="oracle.javatools.db.sql.UsingJoinCondition">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">86d39e19-a9bd-430a-840f-db0e41459c62</identifier>
+            </ID>
+            <columns>
+              <column class="oracle.javatools.db.sql.ColumnUsage">
+                <ID class="oracle.javatools.db.IdentifierBasedID">
+                  <identifier class="java.lang.String">9e462aa0-d11e-4810-816d-7c8ae51ce815</identifier>
+                </ID>
+                <fromObjectID class="oracle.javatools.db.IdentifierBasedID">
+                  <name>PERSONS</name>
+                  <identifier class="java.lang.String">91e75b8b-183d-4d5f-b1be-1cab14e74bf9</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <identifier class="java.lang.String">9988ef4f-ea90-4afc-94d8-fd20970dac42</identifier>
+                    <parent class="oracle.javatools.db.IdentifierBasedID">
+                      <name>PERSON_INFO</name>
+                      <identifier class="java.lang.String">ea07a144-174c-4c33-a15f-7ec94f774f94</identifier>
+                      <schemaName>DBDEMO</schemaName>
+                      <type>VIEW</type>
+                    </parent>
+                    <schemaName>DBDEMO</schemaName>
+                    <type>SQLQuery</type>
+                  </parent>
+                  <schemaName>DBDEMO</schemaName>
+                  <type>FROM</type>
+                </fromObjectID>
+                <objectID class="oracle.javatools.db.IdentifierBasedID">
+                  <name>PERSON_ID</name>
+                  <identifier class="java.lang.String">05a0b59b-d48e-4581-9c4d-efaaf8fb1f20</identifier>
+                  <parent class="oracle.javatools.db.IdentifierBasedID">
+                    <name>PERSONS</name>
+                    <identifier class="java.lang.String">ad1d1471-b3ac-4467-ad59-bfd9df77635b</identifier>
+                    <schemaName>DBDEMO</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>DBDEMO</schemaName>
+                  <type>COLUMN</type>
+                </objectID>
+                <outerJoin>false</outerJoin>
+                <qualified>false</qualified>
+              </column>
+            </columns>
+          </condition>
+          <includeJoinKeyword>false</includeJoinKeyword>
+          <joinType>INNER</joinType>
+          <leftExpression>
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">a9511342-0ed5-4c7f-8bd4-469ad31e4d04</identifier>
+            </ID>
+            <expression class="oracle.javatools.db.sql.RelationUsage">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">48e2a315-0a7c-4549-bc77-f6d5e0052c88</identifier>
+              </ID>
+              <objectID class="oracle.javatools.db.IdentifierBasedID">
+                <name>ADDRESSES</name>
+                <identifier class="java.lang.String">886bc05b-d9ef-4a09-aebd-b55b4f2ec747</identifier>
+                <schemaName>DBDEMO</schemaName>
+                <type>TABLE</type>
+              </objectID>
+            </expression>
+            <with>false</with>
+          </leftExpression>
+          <natural>false</natural>
+          <rightExpression>
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">91e75b8b-183d-4d5f-b1be-1cab14e74bf9</identifier>
+            </ID>
+            <expression class="oracle.javatools.db.sql.RelationUsage">
+              <ID class="oracle.javatools.db.IdentifierBasedID">
+                <identifier class="java.lang.String">2fac985a-be25-4275-9e6c-6052d4691216</identifier>
+              </ID>
+              <objectID class="oracle.javatools.db.IdentifierBasedID">
+                <name>PERSONS</name>
+                <identifier class="java.lang.String">ad1d1471-b3ac-4467-ad59-bfd9df77635b</identifier>
+                <schemaName>DBDEMO</schemaName>
+                <type>TABLE</type>
+              </objectID>
+            </expression>
+            <with>false</with>
+          </rightExpression>
+        </expression>
+        <with>false</with>
+      </fromObject>
+    </fromObjects>
+    <orderSiblings>false</orderSiblings>
+    <selectObjects>
+      <selectObject>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">ac9be0f2-2f8c-4fc2-bf53-a047a526649d</identifier>
+        </ID>
+        <alias>FIRST_NAME</alias>
+        <expression class="oracle.javatools.db.sql.ColumnUsage">
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">1f7f39b1-01bc-46a4-94f4-92cf0ccf2ae2</identifier>
+          </ID>
+          <fromObjectID class="oracle.javatools.db.IdentifierBasedID">
+            <name>PERSONS</name>
+            <identifier class="java.lang.String">91e75b8b-183d-4d5f-b1be-1cab14e74bf9</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">9988ef4f-ea90-4afc-94d8-fd20970dac42</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>PERSON_INFO</name>
+                <identifier class="java.lang.String">ea07a144-174c-4c33-a15f-7ec94f774f94</identifier>
+                <schemaName>DBDEMO</schemaName>
+                <type>VIEW</type>
+              </parent>
+              <schemaName>DBDEMO</schemaName>
+              <type>SQLQuery</type>
+            </parent>
+            <schemaName>DBDEMO</schemaName>
+            <type>FROM</type>
+          </fromObjectID>
+          <objectID class="oracle.javatools.db.IdentifierBasedID">
+            <name>FIRST_NAME</name>
+            <identifier class="java.lang.String">71caa8b2-ecc1-4c47-bce3-a164ea2ae3eb</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>PERSONS</name>
+              <identifier class="java.lang.String">ad1d1471-b3ac-4467-ad59-bfd9df77635b</identifier>
+              <schemaName>DBDEMO</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>DBDEMO</schemaName>
+            <type>COLUMN</type>
+          </objectID>
+          <outerJoin>false</outerJoin>
+          <qualified>true</qualified>
+        </expression>
+        <useAs>false</useAs>
+      </selectObject>
+      <selectObject>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">76abe543-8da3-4976-8fec-0e9768b38993</identifier>
+        </ID>
+        <alias>LAST_NAME</alias>
+        <expression class="oracle.javatools.db.sql.ColumnUsage">
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">9931a448-5c53-4ae3-93a4-0e5868ac6615</identifier>
+          </ID>
+          <fromObjectID class="oracle.javatools.db.IdentifierBasedID">
+            <name>PERSONS</name>
+            <identifier class="java.lang.String">91e75b8b-183d-4d5f-b1be-1cab14e74bf9</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">9988ef4f-ea90-4afc-94d8-fd20970dac42</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>PERSON_INFO</name>
+                <identifier class="java.lang.String">ea07a144-174c-4c33-a15f-7ec94f774f94</identifier>
+                <schemaName>DBDEMO</schemaName>
+                <type>VIEW</type>
+              </parent>
+              <schemaName>DBDEMO</schemaName>
+              <type>SQLQuery</type>
+            </parent>
+            <schemaName>DBDEMO</schemaName>
+            <type>FROM</type>
+          </fromObjectID>
+          <objectID class="oracle.javatools.db.IdentifierBasedID">
+            <name>LAST_NAME</name>
+            <identifier class="java.lang.String">848cabb1-e31f-4814-8dd6-c9bf0c90eca0</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>PERSONS</name>
+              <identifier class="java.lang.String">ad1d1471-b3ac-4467-ad59-bfd9df77635b</identifier>
+              <schemaName>DBDEMO</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>DBDEMO</schemaName>
+            <type>COLUMN</type>
+          </objectID>
+          <outerJoin>false</outerJoin>
+          <qualified>true</qualified>
+        </expression>
+        <useAs>false</useAs>
+      </selectObject>
+      <selectObject>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">6c3380ca-4f28-420d-8820-d6c95aed913b</identifier>
+        </ID>
+        <alias>GENDER</alias>
+        <expression class="oracle.javatools.db.sql.ColumnUsage">
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">f38f9ea1-924f-4406-9976-112a2812e0c6</identifier>
+          </ID>
+          <fromObjectID class="oracle.javatools.db.IdentifierBasedID">
+            <name>PERSONS</name>
+            <identifier class="java.lang.String">91e75b8b-183d-4d5f-b1be-1cab14e74bf9</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">9988ef4f-ea90-4afc-94d8-fd20970dac42</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>PERSON_INFO</name>
+                <identifier class="java.lang.String">ea07a144-174c-4c33-a15f-7ec94f774f94</identifier>
+                <schemaName>DBDEMO</schemaName>
+                <type>VIEW</type>
+              </parent>
+              <schemaName>DBDEMO</schemaName>
+              <type>SQLQuery</type>
+            </parent>
+            <schemaName>DBDEMO</schemaName>
+            <type>FROM</type>
+          </fromObjectID>
+          <objectID class="oracle.javatools.db.IdentifierBasedID">
+            <name>GENDER</name>
+            <identifier class="java.lang.String">675977e5-d0fb-4094-a487-1faf8d9f3cf5</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>PERSONS</name>
+              <identifier class="java.lang.String">ad1d1471-b3ac-4467-ad59-bfd9df77635b</identifier>
+              <schemaName>DBDEMO</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>DBDEMO</schemaName>
+            <type>COLUMN</type>
+          </objectID>
+          <outerJoin>false</outerJoin>
+          <qualified>true</qualified>
+        </expression>
+        <useAs>false</useAs>
+      </selectObject>
+      <selectObject>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">2d90909b-c117-4d86-9fea-50835424fe4c</identifier>
+        </ID>
+        <alias>ADDRESS_LINE1</alias>
+        <expression class="oracle.javatools.db.sql.ColumnUsage">
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">e8b2a0e4-92fd-449c-99e2-28e5ca74b7cb</identifier>
+          </ID>
+          <fromObjectID class="oracle.javatools.db.IdentifierBasedID">
+            <name>ADDRESSES</name>
+            <identifier class="java.lang.String">a9511342-0ed5-4c7f-8bd4-469ad31e4d04</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">9988ef4f-ea90-4afc-94d8-fd20970dac42</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>PERSON_INFO</name>
+                <identifier class="java.lang.String">ea07a144-174c-4c33-a15f-7ec94f774f94</identifier>
+                <schemaName>DBDEMO</schemaName>
+                <type>VIEW</type>
+              </parent>
+              <schemaName>DBDEMO</schemaName>
+              <type>SQLQuery</type>
+            </parent>
+            <schemaName>DBDEMO</schemaName>
+            <type>FROM</type>
+          </fromObjectID>
+          <objectID class="oracle.javatools.db.IdentifierBasedID">
+            <name>ADDRESS_LINE1</name>
+            <identifier class="java.lang.String">b95cc957-b247-4b85-8fcd-4134a937efd5</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>ADDRESSES</name>
+              <identifier class="java.lang.String">886bc05b-d9ef-4a09-aebd-b55b4f2ec747</identifier>
+              <schemaName>DBDEMO</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>DBDEMO</schemaName>
+            <type>COLUMN</type>
+          </objectID>
+          <outerJoin>false</outerJoin>
+          <qualified>true</qualified>
+        </expression>
+        <useAs>false</useAs>
+      </selectObject>
+      <selectObject>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">3a5487fe-9bfa-4dec-89fa-56e4c465df96</identifier>
+        </ID>
+        <alias>ADDRESS_ID</alias>
+        <expression class="oracle.javatools.db.sql.ColumnUsage">
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">591e6923-198c-4349-9692-499d25574f67</identifier>
+          </ID>
+          <fromObjectID class="oracle.javatools.db.IdentifierBasedID">
+            <name>ADDRESSES</name>
+            <identifier class="java.lang.String">a9511342-0ed5-4c7f-8bd4-469ad31e4d04</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">9988ef4f-ea90-4afc-94d8-fd20970dac42</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>PERSON_INFO</name>
+                <identifier class="java.lang.String">ea07a144-174c-4c33-a15f-7ec94f774f94</identifier>
+                <schemaName>DBDEMO</schemaName>
+                <type>VIEW</type>
+              </parent>
+              <schemaName>DBDEMO</schemaName>
+              <type>SQLQuery</type>
+            </parent>
+            <schemaName>DBDEMO</schemaName>
+            <type>FROM</type>
+          </fromObjectID>
+          <objectID class="oracle.javatools.db.IdentifierBasedID">
+            <name>ADDRESS_ID</name>
+            <identifier class="java.lang.String">9001f41f-36d4-4047-b0d8-cdd30ff6f85e</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>ADDRESSES</name>
+              <identifier class="java.lang.String">886bc05b-d9ef-4a09-aebd-b55b4f2ec747</identifier>
+              <schemaName>DBDEMO</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>DBDEMO</schemaName>
+            <type>COLUMN</type>
+          </objectID>
+          <outerJoin>false</outerJoin>
+          <qualified>true</qualified>
+        </expression>
+        <useAs>false</useAs>
+      </selectObject>
+      <selectObject>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">c39869ae-4ec9-420a-87b9-be3b589fee8b</identifier>
+        </ID>
+        <alias>ADDRESS_LINE2</alias>
+        <expression class="oracle.javatools.db.sql.ColumnUsage">
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">87b71f88-b3dc-47d6-b652-dcd19e12ce68</identifier>
+          </ID>
+          <fromObjectID class="oracle.javatools.db.IdentifierBasedID">
+            <name>ADDRESSES</name>
+            <identifier class="java.lang.String">a9511342-0ed5-4c7f-8bd4-469ad31e4d04</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">9988ef4f-ea90-4afc-94d8-fd20970dac42</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>PERSON_INFO</name>
+                <identifier class="java.lang.String">ea07a144-174c-4c33-a15f-7ec94f774f94</identifier>
+                <schemaName>DBDEMO</schemaName>
+                <type>VIEW</type>
+              </parent>
+              <schemaName>DBDEMO</schemaName>
+              <type>SQLQuery</type>
+            </parent>
+            <schemaName>DBDEMO</schemaName>
+            <type>FROM</type>
+          </fromObjectID>
+          <objectID class="oracle.javatools.db.IdentifierBasedID">
+            <name>ADDRESS_LINE2</name>
+            <identifier class="java.lang.String">09d86c09-dd6f-446e-996e-a89caf795d60</identifier>
+            <parent class="oracle.javatools.db.IdentifierBasedID">
+              <name>ADDRESSES</name>
+              <identifier class="java.lang.String">886bc05b-d9ef-4a09-aebd-b55b4f2ec747</identifier>
+              <schemaName>DBDEMO</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>DBDEMO</schemaName>
+            <type>COLUMN</type>
+          </objectID>
+          <outerJoin>false</outerJoin>
+          <qualified>true</qualified>
+        </expression>
+        <useAs>false</useAs>
+      </selectObject>
+    </selectObjects>
+    <queryString>SELECT 
+    PERSONS.FIRST_NAME FIRST_NAME, 
+    PERSONS.LAST_NAME LAST_NAME, 
+    PERSONS.GENDER GENDER, 
+    ADDRESSES.ADDRESS_LINE1 ADDRESS_LINE1, 
+    ADDRESSES.ADDRESS_ID ADDRESS_ID, 
+    ADDRESSES.ADDRESS_LINE2 ADDRESS_LINE2 
+FROM 
+    ADDRESSES JOIN PERSONS USING (PERSON_ID)</queryString>
+  </SQLQuery>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">d61b1631-c6e6-4db7-b0ed-323b0276fcef</identifier>
+      </ID>
+      <name>FIRST_NAME</name>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FIRST_NAME</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>PERSON_INFO</name>
+              <identifier class="java.math.BigDecimal">20268</identifier>
+              <schemaName>DBDEMO</schemaName>
+              <type>VIEW</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">beeb44b3-5a09-4964-9f9e-b09d3a2b16d3</identifier>
+      </ID>
+      <name>LAST_NAME</name>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>LAST_NAME</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>PERSON_INFO</name>
+              <identifier class="java.math.BigDecimal">20268</identifier>
+              <schemaName>DBDEMO</schemaName>
+              <type>VIEW</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">7eef330b-5c93-4008-b455-c23b2a8b3880</identifier>
+      </ID>
+      <name>GENDER</name>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>GENDER</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>PERSON_INFO</name>
+              <identifier class="java.math.BigDecimal">20268</identifier>
+              <schemaName>DBDEMO</schemaName>
+              <type>VIEW</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">6146882f-66d9-48f4-9bc3-2e5da836726e</identifier>
+      </ID>
+      <name>ADDRESS_LINE1</name>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>ADDRESS_LINE1</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>PERSON_INFO</name>
+              <identifier class="java.math.BigDecimal">20268</identifier>
+              <schemaName>DBDEMO</schemaName>
+              <type>VIEW</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">cd9a3aa9-e4d9-4005-9e2f-3a7a3eb10be2</identifier>
+      </ID>
+      <name>ADDRESS_ID</name>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>ADDRESS_ID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>PERSON_INFO</name>
+              <identifier class="java.math.BigDecimal">20268</identifier>
+              <schemaName>DBDEMO</schemaName>
+              <type>VIEW</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">acccdf7e-c049-44d9-a60b-53f8bafce9b6</identifier>
+      </ID>
+      <name>ADDRESS_LINE2</name>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>ADDRESS_LINE2</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>PERSON_INFO</name>
+              <identifier class="java.math.BigDecimal">20268</identifier>
+              <schemaName>DBDEMO</schemaName>
+              <type>VIEW</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <forceOnCreate>false</forceOnCreate>
+  <properties>
+    <entry>
+      <key>OfflineDBConstants.IMPORT_SOURCE_CONNECTION</key>
+      <value class="java.lang.String">DBDEMOConn</value>
+    </entry>
+    <entry>
+      <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+      <value class="oracle.javatools.db.ReferenceID">
+        <name>PERSON_INFO</name>
+        <identifier class="java.math.BigDecimal">20268</identifier>
+        <schemaName>DBDEMO</schemaName>
+        <type>VIEW</type>
+      </value>
+    </entry>
+  </properties>
+  <schema>
+    <name>DBDEMO</name>
+  </schema>
+</view>
